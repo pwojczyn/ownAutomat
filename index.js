@@ -4,9 +4,12 @@ var app = express();
 var staticFolder = 'public';
 app.use(express.static(staticFolder));
 
-app.get('/', (req, res) => {
-    res.send('ownAutomat work !');
-});
+// app.get('/', (req, res) => {
+//     res.send('ownAutomat work !');
+// });
+
+// app.use('/admin', express.static('./node_modules/admin-lte-express/public'))
+// app.use('/', require('admin-lte-express'));
 
 app.get('/test', function (req, res) {
   res.send('test command! ownAutmat');
